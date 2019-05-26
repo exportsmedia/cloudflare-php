@@ -88,7 +88,7 @@ class DNSTest extends TestCase
 
     public function testGetRecordID()
     {
-        $response = $this->getPsr7JsonResponseForFixture('Endpoints/getRecordID.json');
+        $response = $this->getPsr7JsonResponseForFixture('Endpoints/getRecordId.json');
 
         $mock = $this->getMockBuilder(\Cloudflare\API\Adapter\Adapter::class)->getMock();
         $mock->method('get')->willReturn($response);
