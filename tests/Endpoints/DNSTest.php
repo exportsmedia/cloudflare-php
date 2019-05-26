@@ -103,7 +103,6 @@ class DNSTest extends TestCase
         $result = $dns->getRecordID('023e105f4ecef8ad9ca31a8372d0c353', 'A', 'example.com');
 
         $this->assertEquals('372e67954025e0ba6aaa6d586b9e0b59', $result);
-
     }
 
     public function testUpdateDNSRecord()
